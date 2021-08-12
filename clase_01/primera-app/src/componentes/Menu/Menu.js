@@ -1,10 +1,11 @@
 import { Navbar, Icon, NavItem } from 'react-materialize';
 import logo from './images/logo.png'
+import CartWidget from './CartWidget/CartWidget';
 
 const Menu = ()=>{
   return <Navbar
         alignLinks="right"
-        brand={<a className="brand-logo" href="#"><img className="materialboxed" width="100" height="60" src={logo} /></a>}
+        brand={<a className="brand-logo" href="#"><CartWidget/></a>}
         id="mobile-nav"
         menuIcon={<Icon>menu</Icon>}
         options={{
