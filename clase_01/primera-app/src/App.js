@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
         <Menu/>
-        <ItemListContainer msgInicio="Bienvenidos a nuestra tienda On-Line"/>
+        <ItemListContainer/>
     </div>
   );
 }
