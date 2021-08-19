@@ -22,9 +22,9 @@ const ItemListContainer = ()=>{
 
     return (
             <>
-                <div>
-                     <h5>NUESTROS RECOMENDADOS</h5>
-                </div>
+                <section className="center">
+                     <h5>Nuestros productos recomendados</h5>
+                </section>
             <ItemList lista={productos} />
             </>
         )
