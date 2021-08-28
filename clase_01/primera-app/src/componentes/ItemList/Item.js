@@ -1,5 +1,6 @@
 import React from "react"
 import { Row, Col, Card, Icon, CardTitle} from "react-materialize"
+import { Link } from "react-router-dom"
 
 export const Item = ({producto})=>{
     return (
@@ -11,7 +12,8 @@ export const Item = ({producto})=>{
                 >
                     <Card
                     actions={[
-                        <a key="1" href="#">Comprar</a>
+                        <Link key="1" to={"/"}>Comprar</Link>,
+                        <Link key="2" to={"/detalle/"+producto.id}>Ver Detalle</Link>
                     ]}
                     closeIcon={<Icon>close</Icon>}
                     header={<CardTitle image={producto.pictureUrl} />}

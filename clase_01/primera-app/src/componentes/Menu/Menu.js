@@ -1,5 +1,7 @@
-import { Navbar, Icon, NavItem } from 'react-materialize';
+import { Navbar, Icon, NavItem, Button} from 'react-materialize';
 import CartWidget from './CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
+import MaterialIcon, {colorPalette} from 'material-icons-react';
 
 const Menu = ()=>{
   return <Navbar
@@ -18,9 +20,15 @@ const Menu = ()=>{
           outDuration: 200,
           preventScrolling: true
         }}>
-        <NavItem href="">Inicio</NavItem>
-        <NavItem href="">Productos</NavItem>
-        <NavItem href="">Nosotros</NavItem>
+        <Link to={"/"}>Inicio</Link>
+        <Link to={"/productos"}>Productos</Link>
+        <Link to={"/nosotros"}>Nosotros</Link>
+        <Button
+          floating
+          icon={<MaterialIcon icon="shopping_cart" />}
+          large
+          node="button"
+          waves="light"/>
       </Navbar>;
       }
 
